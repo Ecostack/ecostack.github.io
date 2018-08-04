@@ -4,10 +4,6 @@ import ScrollToNext from '../../components/ScrollToNext/index'
 
 import './style.scss'
 
-// const {
-//     theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary }
-//   } = context;
-
 export default class AboutPage extends React.Component {
 
     constructor(props) {
@@ -37,35 +33,20 @@ export default class AboutPage extends React.Component {
                 `}
               </style>
               <div className="content-grid">
-                <h1 style={{ color: this.style.colorPrimary }}>About</h1>
+                <h1 style={{ color: this.style.colorPrimary }}>About me</h1>
                 <div className="about-wrapper">
                   <div className="about-content" style={{ color: this.style.textPrimary }}>
-                    <p>
-                      I like <span className="highlight">JavaScript</span> and
-                      everything web.
-                    </p>
-                    <p>
-                      When my dev senses kick-in I build presumably{' '}
-                      <span className="highlight"> awesome stuff</span>. I stay close to
-                      the community and try to keep tabs with the pace at which the web
-                      is evolving. I also like to{' '}
-                      <span className="highlight">blog</span> what I learn.
-                    </p>
-                    <p>
-                      I built this site <span className="highlight">from scratch</span>.
-                      By scratch, I mean <i>absolutely from scratch</i>{' '}
-                      <span className="highlight">
-                        without any UI library/framework
-                      </span>{' '}
-                      (except React though) and had so much fun along the way.
-                    </p>
-                    <p>
-                      React-Redux, Node.js, Ruby on Rails, Java, Spring Boot, Docker and
-                      AWS are the main tricks up my sleeve. I am also obsessed with making the web look pretty with SASS/CSS.
-                    </p>
-                    <p className="text-emoji" style={{ color: this.style.colorPrimary }}>
-                      \ (•◡•) /
-                    </p>
+                  <p>I am a software developer with ten years of experience.</p>
+
+<p>My experience ranges from maintenance, new development, creation of software and server land scape architecture to teachings.</p>
+
+<p>The current technology stack includes things like NodeJS, TypeScript, ElasticSearch, Redis and also their related frameworks and libraries.</p>
+
+<p>Besides that I have interesting in emerging technologies like machine learning and how it can be combined with traditional software development.</p>
+
+<p>If you are you need help for a new development, maintenance of an application or just wanna have a chat, please feel free to contact me via mail.</p>
+
+
                   </div>
                 </div>
               </div>
