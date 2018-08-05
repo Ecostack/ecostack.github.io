@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.scss';
+import ProjectStyles from "../../styles/projectStyles";
 
 export default class Nav extends React.Component {
     constructor(props) {
@@ -10,11 +11,11 @@ export default class Nav extends React.Component {
           isSticky: false
         };
 
-        this.style = {
-          navAlpha : `rgba(72, 85, 100, 0.75)`,
-          bgPrimary : `rgb(72, 85, 100)`,
-          colorPrimary : `rgb(255, 255, 255)`
-        }
+        // this.style = {
+        //   navAlpha : `rgba(72, 85, 100, 0.75)`,
+        //   bgPrimary : `rgb(72, 85, 100)`,
+        //   colorPrimary : `rgb(255, 255, 255)`
+        // }
       }
     
       componentDidMount() {
@@ -53,8 +54,8 @@ export default class Nav extends React.Component {
     
         const stickyClass = this.state.isSticky ? 'sticky' : '';
         const stickyStyles = this.state.isSticky
-          ? { backgroundColor: this.style.navAlpha, color: this.style.ncolorPrimary }
-          : { backgroundColor: this.style.nbgPrimary, color: this.style.ncolorPrimary };
+          ? { backgroundColor: ProjectStyles.navAlpha, color: ProjectStyles.ncolorPrimary }
+          : { backgroundColor: ProjectStyles.nbgPrimary, color: ProjectStyles.ncolorPrimary };
         return (
           <nav
             className={stickyClass}
@@ -66,7 +67,7 @@ export default class Nav extends React.Component {
             <style jsx="true">
               {`
                 .menu .item:hover {
-                  border-bottom: 2px solid ${this.style.colorPrimary};
+                  border-bottom: 2px solid ${ProjectStyles.colorPrimary};
                 }
               `}
             </style>
