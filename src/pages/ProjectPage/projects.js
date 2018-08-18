@@ -1,10 +1,26 @@
 import Technology from "./Technology";
+import PlekLogo from '../../assets/project/logo-temp.png';
+import IWALogo from '../../assets/project/iwa.png';
+import APOInfoPlusLogo from '../../assets/project/apoinfo-plus.jpg';
+import APOScanPlusLogo from '../../assets/project/aposcan-plus.jpg';
+import HumanRightsLogo from '../../assets/project/humanrights.svg';
+import TrustCenterLogo from '../../assets/project/iqvia.svg';
+
+import JPMorganChase from '../../assets/project/chase.jpg';
+
+import WebEspos from '../../assets/project/webespos.png';
+import DELISprint from '../../assets/project/delisprint.png';
+
+// import PlekLogo from '../../assets/images/plek.png';
+
+// Toyota
 
 export default [
     {
         title: "Plek",
         link: `https://plek.co`,
-        subtitle: null,
+        subtitle: 'Social intranet platform',
+        logo: PlekLogo,
         description:
             `<p><b>Plek is a social intranet platform which makes communication of teams and whole companies easier.</b></p>
                 <p>This application brings different things like documents, chats, messages, events and groups. It lifts communication to a new era.</p>
@@ -26,15 +42,17 @@ export default [
                     Migration of SailsJS to a ExpressJS stack
                 </li>
                </ul></p>`,
+        mainfonts: ['js', 'react',],
         technology: [Technology.ELASTICSEARCH,
             Technology.ANGULAR, Technology.NODEJS, Technology.REACT, Technology.REACT_NATIVE, Technology.REDIS,
             Technology.WEBSOCKET, Technology.MONGODB
         ]
     },
     {
-        title: "IWA - International Water Association",
+        title: "IWA",
         link: `https://iwa-connect.org`,
-        subtitle: null,
+        subtitle: 'Intranet platform with membership',
+        logo: IWALogo,
         description:
             `<p><b>IWA is a social intranet platform with a membership feature.</b></p>
                 <p>Users can just register and also pay for a membership. That memberships allows to get access to their magazines and also certain closed groups inside of the platform.</p>
@@ -43,6 +61,7 @@ export default [
                 <p>GlobalCollect is the payment provider and Turpin is being used to send out orders for the journals.</p>
                 <p>Besides the development of a recurring payment option in the membership, my key role is maintenance.</p>
                      `,
+        mainfonts: ['js',],
         technology: [Technology.ELASTICSEARCH,
             Technology.ANGULAR, Technology.NODEJS, Technology.REACT, Technology.REACT_NATIVE, Technology.REDIS,
             Technology.WEBSOCKET, Technology.MONGODB, Technology.TURPIN, Technology.GLOBAL_COLLECT]
@@ -50,6 +69,8 @@ export default [
     {
         title: "Publications Mensenrechten",
         link: 'https://mensenrechten.nl/nl/oordelen',
+        subtitle: 'Verdict and publication CMS',
+        logo: HumanRightsLogo,
         description:
             `<p><b>This application allows the employees at Mensenrechten (College of human rights Netherlands) to safely manage and publish publications and verdicts.</b></p>
              <p>My role in that project was the design of the whole back end and the integration with the main website <a src="https://mensenrechten.nl">https://mensenrechten.nl</a>.</p>`,
@@ -69,13 +90,24 @@ export default [
     },
     {
         title: "ATM JPMorgan Chase",
+        logo: JPMorganChase,
         description:
             `<p><b>ATM software for the bank JPMorgan Chase developed at Wincor Nixdorf.</b></p>
              `,
         technology: [Technology.JAVA, Technology.J2EE]
     },
     {
-        title: "Pharmacy data query",
+        title: "TrustCenter at IQVIA",
+        logo: TrustCenterLogo,
+        description:
+            `<p><b>.....</b></p>
+             `,
+        technology: [Technology.JAVA, Technology.J2EE]
+    },
+
+    {
+        title: "APOINFO-Plus",
+        logo: APOInfoPlusLogo,
         description:
             `<p><b>This software allows IMS health to query hashed patient data.</b></p>
              `,
@@ -83,7 +115,7 @@ export default [
     },
     {
         title: "Git Teachings",
-        hide:true,
+        hide: true,
         description:
             `<p><b>This is this and that</b></p>
                      <p><b>This is this and that</b></p>
@@ -104,6 +136,7 @@ export default [
     },
     {
         title: "APOSCAN-Plus",
+        logo: APOScanPlusLogo,
         description:
             `<p><b>Medical receipt scanning in the pharmacy.</b></p>
              <p>The application would be installed along with a scanner on a computer in the pharmacy. It enables the phamacist to receive feedback on the scanned receipt in just one day.</p>
@@ -117,18 +150,20 @@ export default [
             `<p>Maintenance and feature development of various web applications.</p>
             <p>The range of the applications were rich, from a reporting tool for pharmacies to an inhouse ticket system.</p>
                `,
-        technology: [Technology.JAVA,Technology.APACHE_TOMCAT, Technology.APACHE_STRUTS]
+        technology: [Technology.JAVA, Technology.APACHE_TOMCAT, Technology.APACHE_STRUTS]
     },
     {
         title: "Replacement part order system",
+        logo: WebEspos,
         description:
             `<p><b>This system allows to mechanics to order replacement parts for that company.</b></p>
                `,
-        technology: [Technology.JAVA,Technology.APACHE_TOMCAT, Technology.APACHE_STRUTS]
+        technology: [Technology.JAVA, Technology.APACHE_TOMCAT, Technology.APACHE_STRUTS]
     },
     {
         title: "DELISprint",
         link: 'https://www.dpd.com/',
+        logo: DELISprint,
         description:
             `<p><b>Desktop application for printing labels inside of a package shop.</b></p>
                `,

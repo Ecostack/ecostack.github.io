@@ -28,6 +28,18 @@
   }
 
   //.project-wrapper {
+
+  .portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include breakpoint-small-down {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
     
     .project-content {
       font-size: 0.875rem;

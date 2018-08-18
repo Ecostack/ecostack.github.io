@@ -22,6 +22,18 @@
   }
 
   .about-wrapper {
+
+    .list-inline {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .list-inline-item {
+      display: inline-block;
+      width:100px;
+      padding-top:0.5em;
+      padding-right:1em;
+    }
     
     .about-content {
       font-size: 0.875rem;

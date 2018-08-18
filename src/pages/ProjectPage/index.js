@@ -1,11 +1,11 @@
 import React from 'react';
 
 import projects from './projects'
-import {ProjectEntry} from "../../components/ProjectEntry";
 
 import ProjectStyles from "../../styles/projectStyles";
 
 import './style.scss'
+import {ProjectBoxEntry} from "../../components/ProjectBoxEntries";
 
 const styleHR = {
     'backgroundColor': 'rgba(255,255,255,0.3)',
@@ -24,18 +24,28 @@ export default class ProjectPage extends React.Component {
             <div style={{backgroundColor: ProjectStyles.bgPrimary}} className="project-page">
                 <div className="content-grid">
                     <h1 style={{color: ProjectStyles.colorPrimary}}>Projects</h1>
-                    <ul style={{color: ProjectStyles.colorPrimary}}>
-                        {this.projects.filter(project => project.hide !== true).map(project => {
-                            return <li>
-                                <div className="project-content">
-                                    <ProjectEntry title={project.title} description={project.description}
-                                                  image={project.image} technology={project.technology}></ProjectEntry>
-                                </div>
-                                <hr style={styleHR}/>
-                            </li>
-                        })}
-                    </ul>
 
+
+                    <div className="portfolio-wrapper">
+                        <style jsx="true">
+                            {`
+              .portfolio-item {
+                background-color: ${ProjectStyles.colorPrimary};
+                color: ${ProjectStyles.bgPrimary};
+              }
+              .portfolio-item a {
+                color: ${ProjectStyles.bgPrimary};
+              }
+              .portfolio-item__links a:hover {
+                border-bottom: 2px solid ${ProjectStyles.bgPrimary};
+              }
+            `}
+                        </style>
+                        {this.projects.filter(project => project.hide !== true)
+                            .map((item, i) => (
+                                <ProjectBoxEntry {...item} key={i}/>
+                            ))}
+                    </div>
                 </div>
             </div>
         )
