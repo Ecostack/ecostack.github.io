@@ -1,8 +1,12 @@
 {
-  "main.css": "static/css/main.da064c7f.css",
-  "main.css.map": "static/css/main.da064c7f.css.map",
-  "main.js": "static/js/main.0d2c503f.js",
-  "main.js.map": "static/js/main.0d2c503f.js.map",
+  "main.css": "static/css/main.fc232b3c.css",
+  "main.css.map": "static/css/main.fc232b3c.css.map",
+  "main.js": "static/js/main.c493d251.js",
+  "main.js.map": "static/js/main.c493d251.js.map",
+  "static/media/apoinfo-plus.jpg": "static/media/apoinfo-plus.a14b34c7.jpg",
+  "static/media/aposcan-plus.jpg": "static/media/aposcan-plus.db2a34e6.jpg",
+  "static/media/chase.jpg": "static/media/chase.ab34d2f4.jpg",
+  "static/media/delisprint.png": "static/media/delisprint.68b369a2.png",
   "static/media/fa-brands-400.eot": "static/media/fa-brands-400.e8019d50.eot",
   "static/media/fa-brands-400.svg": "static/media/fa-brands-400.83e6c29f.svg",
   "static/media/fa-brands-400.ttf": "static/media/fa-brands-400.fdf44bc4.ttf",
@@ -18,6 +22,9 @@
   "static/media/fa-solid-900.ttf": "static/media/fa-solid-900.132e9759.ttf",
   "static/media/fa-solid-900.woff": "static/media/fa-solid-900.2d0415fa.woff",
   "static/media/fa-solid-900.woff2": "static/media/fa-solid-900.b75b4bfe.woff2",
+  "static/media/humanrights.svg": "static/media/humanrights.ede8d12f.svg",
+  "static/media/iqvia.svg": "static/media/iqvia.a4bc37aa.svg",
+  "static/media/logo-temp.png": "static/media/logo-temp.f09fd44d.png",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
   "static/media/profile.jpg": "static/media/profile.ee4a178e.jpg",
   "static/media/reem-kufi-v4-latin-regular.woff": "static/media/reem-kufi-v4-latin-regular.20e4fd7e.woff",
@@ -25,5 +32,6 @@
   "static/media/roboto-100.woff2": "static/media/roboto-100.9a8a1f8c.woff2",
   "static/media/roboto-300.woff2": "static/media/roboto-300.c0cc9c92.woff2",
   "static/media/roboto-400.woff2": "static/media/roboto-400.ece6673e.woff2",
-  "static/media/roboto-900.woff2": "static/media/roboto-900.2e17a648.woff2"
+  "static/media/roboto-900.woff2": "static/media/roboto-900.2e17a648.woff2",
+  "static/media/webespos.png": "static/media/webespos.693f5ab2.png"
 }
