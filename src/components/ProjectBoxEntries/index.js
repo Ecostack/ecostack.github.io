@@ -13,12 +13,17 @@ export class ProjectBoxEntry extends React.Component {
         this.state = {showComponent: false};
 
         this.showOverlay = this.showOverlay.bind(this);
+        this.hideOverlay = this.hideOverlay.bind(this);
     }
 
     showOverlay() {
         this.setState({
             showComponent: true
         })
+    }
+
+    hideOverlay() {
+        this.setState({...this.state, showComponent: false})
     }
 
 
@@ -28,42 +33,19 @@ export class ProjectBoxEntry extends React.Component {
                 className="portfolio-item"
                 style={{backgroundColor: ProjectStyles.colorPrimary, color: ProjectStyles.bgPrimary}}
             >
-                <div className="portfolio-item__title">{this.props.title}</div>
-                {/*<div className="portfolio-item__desc">*/}
-                {/*{props.subtitle}*/}
-                {/*</div>*/}
-
-
                 {this.props.logo &&
                 <div className="portfolio-item__image">
                     <img src={this.props.logo}/>
                 </div>
                 }
 
-
-                {(this.props.technology && this.props.technology.length > 0) &&
-                <div className="portfolio-item__technology">
-                    <ul>
-                        {this.props.technology.map(tech => {
-                            <li>{JSON.stringify(tech.title)}</li>
-                        })}
-                    </ul>
-                </div>
-                }
-
-
-                {/*<div className="portfolio-item__icon">*/}
-                {/*<i className="fab fa-js" />*/}
-                {/*<i className="fab fa-react" />*/}
-                {/*<i className="fab fa-html5" />*/}
-                {/*</div>*/}
                 <div className="portfolio-item__links">
                     <a onClick={this.showOverlay}>Open</a>
                     {this.props.link &&
                     <a href={this.props.link}>Link</a>
                     }
                     {this.state.showComponent &&
-                    <ProjectEntryPopup {...this.props}/>
+                    <ProjectEntryPopup {...this.props} hideOverlay={this.hideOverlay}/>
                     }
 
                 </div>

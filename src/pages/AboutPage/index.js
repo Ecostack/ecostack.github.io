@@ -55,11 +55,8 @@ export default class AboutPage extends React.Component {
                             <p>Besides that I have interesting in emerging technologies like machine learning and how it
                                 can be combined with traditional software development.</p>
 
-                            <p>If you are you need help for a new development, maintenance of an application or just
+                            <p>If you need help for a new development, maintenance of an application or just
                                 wanna have a chat, please feel free to contact me via my email <a href={this.mailTo}>{this.email}</a>.</p>
-
-
-
                         </div>
                     </div>
                     <h1 style={{color: this.style.colorPrimary}}>Skills</h1>
