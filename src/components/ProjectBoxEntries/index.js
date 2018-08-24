@@ -31,7 +31,7 @@ export class ProjectBoxEntry extends React.Component {
         return (
             <div
                 className="portfolio-item"
-                style={{backgroundColor: ProjectStyles.colorPrimary, color: ProjectStyles.bgPrimary}}
+                style={{backgroundColor: ProjectStyles.boxBackground, color: ProjectStyles.colorPrimary}}
             >
                 {this.props.logo &&
                 <div className="portfolio-item__image">

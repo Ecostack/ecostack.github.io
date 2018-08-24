@@ -29,13 +29,13 @@ export default class ProjectPage extends React.Component {
                     <div className="portfolio-wrapper">
                         <style jsx="true">
                             {`
-              .portfolio-item {
-                background-color: ${ProjectStyles.colorPrimary};
-                color: ${ProjectStyles.bgPrimary};
-              }
-              .portfolio-item a {
-                color: ${ProjectStyles.bgPrimary};
-              }
+              // .portfolio-item {
+              //   background-color: ${ProjectStyles.colorPrimary};
+              //   color: ${ProjectStyles.bgPrimary};
+              // }
+              // .portfolio-item a {
+              //   color: ${ProjectStyles.colorPrimary};
+              // }
               .portfolio-item__links a:hover {
                 border-bottom: 2px solid ${ProjectStyles.bgPrimary};
               }

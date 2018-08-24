@@ -87,7 +87,7 @@ h1 {
 	}
 
 	@include breakpoint-xlarge-up {
-		width: calc(100% - 20rem);
+		width: calc(100% - 30rem);
 	}
 }
 

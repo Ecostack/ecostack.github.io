@@ -10,12 +10,12 @@ export default class AboutPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {...props};
-        this.style = {
-            bgPrimary: `rgb(72, 85, 100)`,
-            colorPrimary: `rgb(255, 255, 255)`,
-            textPrimary: `rgb(255, 255, 255)`,
-            colorHighlight: `rgb(255, 255, 255)`,
-        }
+        // this.style = {
+        //     bgPrimary: `rgb(72, 85, 100)`,
+        //     colorPrimary: `rgb(255, 255, 255)`,
+        //     textPrimary: `rgb(255, 255, 255)`,
+        //     colorHighlight: `rgb(255, 255, 255)`,
+        // }
 
         this.email = "sebastian@ecostack.nl";
         this.mailTo = `mailto:${this.email}`
@@ -25,14 +25,14 @@ export default class AboutPage extends React.Component {
     render() {
         return (
             // <div></div>
-            <div className="about-page" style={{backgroundColor: this.style.bgPrimary}}>
+            <div className="about-page" style={{backgroundColor: ProjectStyles.bgPrimary}}>
                 <style jsx="true">
                     {`
                   .highlight {
-                    background-color: ${this.style.colorHighlight};
+                    background-color: ${ ProjectStyles.colorHighlight};
                   }
                   ::selection {
-                    background-color: ${this.style.colorHighlight};
+                    background-color: ${ProjectStyles.colorHighlight};
                   }
 
                   a{
@@ -41,9 +41,9 @@ export default class AboutPage extends React.Component {
                 `}
                 </style>
                 <div className="content-grid">
-                    <h1 style={{color: this.style.colorPrimary}}>About me</h1>
+                    <h1 style={{color: ProjectStyles.colorPrimary}}>About me</h1>
                     <div className="about-wrapper">
-                        <div className="about-content" style={{color: this.style.textPrimary}}>
+                        <div className="about-content" style={{color: ProjectStyles.textPrimary}}>
                             <p>I am a software developer with ten years of experience.</p>
 
                             <p>My experience ranges from maintenance, new development, creation of software and server
@@ -59,7 +59,7 @@ export default class AboutPage extends React.Component {
                                 wanna have a chat, please feel free to contact me via my email <a href={this.mailTo}>{this.email}</a>.</p>
                         </div>
                     </div>
-                    <h1 style={{color: this.style.colorPrimary}}>Skills</h1>
+                    <h1 style={{color: ProjectStyles.colorPrimary}}>Skills</h1>
                     <div className="about-wrapper">
                         <ul className="list-inline list-icons">
                             <li className="list-inline-item">
@@ -111,6 +111,15 @@ export default class AboutPage extends React.Component {
                                 <svg viewBox="0 0 128 128" fill={ProjectStyles.colorPrimary}>
                                     <path
                                         d="M76.004 50.588c-7.655 0-11.459 3.996-11.459 9.75 0 3.704 1.852 6.328 4.304 7.529-1.201 1.101-2.201 2.064-3.102 3.014-.902.952-1.452 1.957-1.452 3.059 0 1.352.55 2.605 2.202 3.303-1.751 1.654-2.753 2.854-2.753 5.107 0 3.953 3.453 6.256 12.511 6.256 8.708 0 13.761-3.251 13.761-9.007 0-6.653-5.103-6.904-13.761-7.456l-4.904-.3 1.652-2.652c.899.25 2.352.45 3.955.45 6.304 0 10.658-3.252 10.658-8.808 0-2.302-1.137-3.903-2.037-5.055l4.421-.35v-4.428h-9.391c-1.15 0-2.453-.412-4.605-.412zm2.252 28.511c2.404.15 4.306.25 4.306 1.854 0 2.699-3.955 2.902-6.856 2.902-3.504 0-6.056-.602-6.056-2.603 0-1.002.65-1.852 1.302-2.652l7.304.499zm-1.949-14.712c-3.304 0-4.655-1.703-4.655-4.154 0-3.253 2.051-4.605 4.804-4.605 2.852 0 4.554 1.552 4.554 4.504 0 2.604-1.902 4.255-4.703 4.255zM99.173 46.685c2.902 0 4.554-1.652 4.554-4.506 0-2.85-1.652-4.403-4.554-4.403-2.853 0-4.505 1.553-4.505 4.403 0 2.853 1.652 4.506 4.505 4.506zM103 71.455v-20.455h-9.733l-.55 3.896 2.667.874c.502.149.616.423.616.973v14.712c0 .752-.422.902-1.123 1.003l-2.877.35v4.192h15v-4.192l-2.876-.35c-.753-.101-1.124-.2-1.124-1.003zM125.418 70.415c-1.202.45-2.632.799-4.035.799-2.701 0-3.383-1.15-3.383-4.103v-12.111h7v-5h-6.638c-.401 0-.362-.003-.362-.353v-6.647h-4.793c-.55 5-3.207 7.196-7.207 7.698v4.302h4.003c.401 0-.003.353-.003.652v13.111c0 5.657 2.454 8.058 8.408 8.058 2.854 0 6.107-.951 8.26-2.001l-1.25-4.405zM29.738 38.806c-1.317-1.318-3.455-1.318-4.773 0l-4.751 4.751 6.027 6.027c1.401-.473 3.007-.156 4.124.961 1.122 1.123 1.437 2.743.952 4.149l5.809 5.809c1.406-.484 3.027-.171 4.149.953 1.57 1.568 1.57 4.11 0 5.679-1.569 1.57-4.11 1.57-5.68 0-1.18-1.181-1.624-2.914-1.025-4.368l-5.57-5.417v14.257c0 .189.895.441 1.214.759 1.568 1.568 1.644 4.11.075 5.681-1.569 1.568-4.074 1.568-5.642 0-1.568-1.571-1.549-4.112.02-5.681.388-.387.333-.68 1.333-.876v-14.389c-1-.196-.927-.487-1.314-.876-1.188-1.188-1.474-2.931-.865-4.39l-5.942-5.943-15.689 15.689c-1.319 1.319-1.319 3.457 0 4.774l22.882 22.881c1.317 1.317 3.454 1.317 4.773 0l22.775-22.776c1.317-1.318 1.317-3.456 0-4.774l-22.882-22.88z"></path>
+                                </svg>
+                            </li>
+
+                            <li className="list-inline-item">
+                                <svg viewBox="0 0 322.2 308" fill={ProjectStyles.colorPrimary}>
+                                    <path id="Elasticsearch_4_" class="st5" d="M147.7,191.8H45.8c-3.7-11.9-5.8-24.6-5.8-37.8s2-25.9,5.8-37.8h101.8h65.9
+	c20.8,0,37.6,17,37.6,37.9c0,20.8-16.8,37.7-37.6,37.7H147.7z M142.9,204.4H50.6c9.8,22.4,26,41.5,46.2,54.8l0,0
+	c19.9,13.1,43.7,20.8,69.3,20.8c43.7,0,82.2-22.3,104.8-56.1c-11.6-12-27.9-19.5-45.9-19.5H142.9z M225,103.6
+	c18,0,34.3-7.5,45.9-19.5C248.3,50.3,209.8,28,166,28c-25.6,0-49.4,7.7-69.3,20.8l0,0c-20.2,13.4-36.4,32.4-46.2,54.8h92.4H225z"/>
                                 </svg>
                             </li>
 
