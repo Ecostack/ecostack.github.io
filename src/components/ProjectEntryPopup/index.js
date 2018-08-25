@@ -2,11 +2,27 @@ import React from 'react';
 import './style.scss'
 import ProjectStyles from "../../styles/projectStyles";
 
-export function ProjectEntryPopup(props) {
-    return (
-        <div className="project-entry-popup">
-            <style jsx="true">
-                {`
+export class ProjectEntryPopup extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.componentDidMount = this.componentDidMount.bind(this);
+    }
+
+    componentDidMount() {
+        const props = this.props;
+        window.onkeyup = (event) => {
+            if (event.which === 27 && props && props.hideOverlay) {
+                props.hideOverlay();
+            }
+        }
+    }
+
+    render() {
+        return (
+            <div className="project-entry-popup">
+                <style jsx="true">
+                    {`
               .project-entry-popup {
                 background-color: ${ProjectStyles.bgPrimary};
                 color: ${ProjectStyles.colorPrimary};
@@ -21,30 +37,30 @@ export function ProjectEntryPopup(props) {
                  font-weight:400;
               }
             `}
-            </style>
-            <div className="project-entry-popup-grid">
+                </style>
+                <div className="project-entry-popup-grid">
 
 
+                    <div className="title">{this.props.title}</div>
+                    <div className="description" dangerouslySetInnerHTML={{__html: this.props.description}}></div>
 
-                <div className="title">{props.title}</div>
-                <div className="description" dangerouslySetInnerHTML={{__html: props.description}}></div>
+                    {(this.props.technology && this.props.technology.length > 0) &&
+                    <div className="technology">
+                        <ul>
+                            {this.props.technology.map(tech => tech.title).map(function (tech, index) {
+                                return <li className="technology__item" key={index}>{tech}</li>;
+                            })}
+                        </ul>
+                    </div>
+                    }
+                    <div className='buttonWrap'>
+                        <a onClick={this.props.hideOverlay}>Close</a>
 
-                {(props.technology && props.technology.length > 0) &&
-                <div className="technology">
-                    <ul>
-                        {props.technology.map(tech => tech.title).map(function(tech, index){
-                            return <li className="technology__item" key={index}>{tech}</li>;
-                        })}
-                    </ul>
+                        {/*<button onClick={props.hideOverlay}>Close</button>*/}
+                    </div>
+
                 </div>
-                }
-                <div className='buttonWrap'>
-                    <a onClick={props.hideOverlay}>Close</a>
-
-                    {/*<button onClick={props.hideOverlay}>Close</button>*/}
-                </div>
-
             </div>
-        </div>
-    )
+        )
+    }
 }
