@@ -1,8 +1,13 @@
 import Technology from "./Technology";
 import PlekLogo from '../../assets/project/logo-temp.png';
 import IWALogo from '../../assets/project/iwa.png';
-import APOInfoPlusLogo from '../../assets/project/apoinfo-plus.jpg';
+
+import APOInfoPlusLogo from '../../assets/project/apoinfoplus_logo_rgb.jpg';
 import APOScanPlusLogo from '../../assets/project/aposcan-plus.jpg';
+import ARZLogo from '../../assets/project/arz.jpg';
+
+import ToyotaFinanceLogo from '../../assets/project/logo-tfs.gif';
+
 import HumanRightsLogo from '../../assets/project/humanrights.svg';
 import TrustCenterLogo from '../../assets/project/iqvia.svg';
 
@@ -125,6 +130,7 @@ export default [
     },
     {
         title: "Git migration at huge automotive credit bank",
+        logo:ToyotaFinanceLogo,
         description:
             `<p>That automotive credit bank used to have their software in one SVN repository which grew to a huge size over the years.</p>
             <p>They wanted to migrate to a more modern and flexible repository system, which was Git.</p>
@@ -146,6 +152,7 @@ export default [
     },
     {
         title: "Pharmacy Data Center Darmstadt",
+        logo:ARZLogo,
         description:
             `<p>Maintenance and feature development of various web applications.</p>
             <p>The range of the applications were rich, from a reporting tool for pharmacies to an inhouse ticket system.</p>

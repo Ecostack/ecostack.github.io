@@ -7,12 +7,6 @@ import ProjectStyles from "../../styles/projectStyles";
 import './style.scss'
 import {ProjectBoxEntry} from "../../components/ProjectBoxEntries";
 
-const styleHR = {
-    'backgroundColor': 'rgba(255,255,255,0.3)',
-    'height': '1px',
-    'border': 0
-}
-
 export default class ProjectPage extends React.Component {
     constructor(props) {
         super(props);
@@ -29,10 +23,13 @@ export default class ProjectPage extends React.Component {
                     <div className="portfolio-wrapper">
                         <style jsx="true">
                             {`
-              // .portfolio-item {
-              //   background-color: ${ProjectStyles.colorPrimary};
-              //   color: ${ProjectStyles.bgPrimary};
-              // }
+              .portfolio-item {
+                background-color: ${ProjectStyles.boxBackground};
+                color: ${ProjectStyles.bgPrimary};
+              }
+              .portfolio-item__image {
+                background-color: white;
+              }
               // .portfolio-item a {
               //   color: ${ProjectStyles.colorPrimary};
               // }
