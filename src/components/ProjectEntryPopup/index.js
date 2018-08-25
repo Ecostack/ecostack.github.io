@@ -15,7 +15,10 @@ export function ProjectEntryPopup(props) {
               .technology__item {
                 color: ${ProjectStyles.bgPrimary};
                  background-color: ${ProjectStyles.colorPrimary};
-                 padding: 0.2em;
+                 padding: 0.4em 0.7em;
+                margin-right: 0.5em;
+                margin-bottom: 0.4em;
+                 font-weight:400;
               }
             `}
             </style>
@@ -36,7 +39,9 @@ export function ProjectEntryPopup(props) {
                 </div>
                 }
                 <div className='buttonWrap'>
-                    <button onClick={props.hideOverlay}>Close</button>
+                    <a onClick={props.hideOverlay}>Close</a>
+
+                    {/*<button onClick={props.hideOverlay}>Close</button>*/}
                 </div>
 
             </div>
