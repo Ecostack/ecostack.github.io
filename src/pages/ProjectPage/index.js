@@ -15,7 +15,9 @@ export default class ProjectPage extends React.Component {
 
     render() {
         return (
-            <div style={{backgroundColor: ProjectStyles.bgPrimary}} className="project-page">
+            <div
+                // style={{backgroundColor: ProjectStyles.bgPrimary}}
+                className="project-page">
                 <div className="content-grid">
                     <h1 style={{color: ProjectStyles.colorPrimary}}>Projects</h1>
 

@@ -10,7 +10,7 @@ import ProjectPage from "./pages/ProjectPage";
 class App extends Component {
   render() {
     return (
-      <div className="wrapper-landing-page">
+      <div className="wrapper-landing-page" style={{background:'linear-gradient(rgb(51, 107, 135), rgb(30, 150, 150))'}}>
           <LandingPage />
           <AboutPage />
           <ProjectPage/>

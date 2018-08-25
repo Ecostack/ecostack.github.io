@@ -4,10 +4,10 @@
   padding-top: 2rem;
   min-height: 100vh;
   display: flex;
-	flex: 0 1 auto;
-	flex-direction: column;
+  flex: 0 1 auto;
+  flex-direction: column;
   justify-content: center;
-  
+
   @include breakpoint-small-down {
     padding-top: 3rem;
   }
@@ -30,15 +30,19 @@
 
     .list-inline-item {
       display: inline-block;
-      width:100px;
-      padding-top:0.5em;
-      padding-right:1em;
+      width: 100px;
+      padding-top: 0.5em;
+      padding-right: 1em;
+
+      @include breakpoint-small-down {
+        width: 80px;
+      }
     }
-    
+
     .about-content {
       font-size: 0.875rem;
       line-height: 1.5rem;
-      
+
       @include breakpoint-small-down {
         font-size: 1rem;
       }

@@ -17,7 +17,7 @@ export default class AboutPage extends React.Component {
         //     colorHighlight: `rgb(255, 255, 255)`,
         // }
 
-        this.email = "sebastian@ecostack.nl";
+        this.email = "sebastian@techstack.de";
         this.mailTo = `mailto:${this.email}`
     }
 
@@ -25,7 +25,9 @@ export default class AboutPage extends React.Component {
     render() {
         return (
             // <div></div>
-            <div className="about-page" style={{backgroundColor: ProjectStyles.bgPrimary}}>
+            <div className="about-page"
+                 // style={{backgroundColor: ProjectStyles.bgPrimary}}
+            >
                 <style jsx="true">
                     {`
                   .highlight {

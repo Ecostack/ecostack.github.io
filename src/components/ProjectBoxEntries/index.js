@@ -34,9 +34,11 @@ export class ProjectBoxEntry extends React.Component {
                 style={{backgroundColor: ProjectStyles.boxBackground, color: ProjectStyles.colorPrimary}}
             >
                 {this.props.logo &&
-                <div className="portfolio-item__image">
-                    <img src={this.props.logo}/>
-                </div>
+                <a onClick={this.showOverlay}>
+                    <div className="portfolio-item__image">
+                        <img src={this.props.logo}/>
+                    </div>
+                </a>
                 }
 
                 <div className="portfolio-item__links">

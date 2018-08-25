@@ -18,7 +18,9 @@ export default class LandingPage extends React.Component {
     }
 
     render() {
-        return <div style={{backgroundColor: ProjectStyles.bgPrimary}} className="landing-page">
+        return <div
+            // style={{backgroundColor: ProjectStyles.bgPrimary}}
+            className="landing-page">
             <Nav/>
             <main style={{color: ProjectStyles.colorPrimary}}>
                 <div className="intro-wrapper">
