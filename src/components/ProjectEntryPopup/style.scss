@@ -1,7 +1,7 @@
 @import '../../styles/breakpoints';
 
 .project-entry-popup {
-  opacity: 0.9;
+  opacity: 0.97;
   background-color: black;
   position: fixed;
   width: 100%;
@@ -16,12 +16,25 @@
     height: 100%;
     overflow: scroll;
 
-    @include  breakpoint-medium-down {
+    @include breakpoint-medium-down {
       width: 80%;
     }
 
-    .title {
-      font-size:2em;
+    div.title {
+      font-size: 3em;
+      padding: 0.5em 0em;
+    }
+
+    .description {
+      ul {
+        list-style: disc inside;
+        li {
+          padding: 0.2rem 0;
+        }
+      }
+      p {
+        padding: 0.2rem 0;
+      }
     }
 
     .buttonWrap {
@@ -30,9 +43,9 @@
       justify-content: center;
 
       a {
-        background:white;
+        background: white;
         color: black;
-        padding:1em 2em;
+        padding: 1em 2em;
       }
 
       button {
@@ -54,7 +67,7 @@
     }
 
     div {
-      padding:1em 0em;
+      padding: 1em 0em;
     }
   }
 }

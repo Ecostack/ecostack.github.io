@@ -29,4 +29,9 @@ export default {
     HIBERNATE: {title:'HIBERNATE'},
     APACHE_TOMCAT: {title:'APACHE_TOMCAT'},
     APACHE_STRUTS: {title:'APACHE_STRUTS'},
+
+    PYTHON: {title:'PYTHON'},
+
+    LINUX: {title:'LINUX'},
+    UNIX: {title:'UNIX'},
 }
