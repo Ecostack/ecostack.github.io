@@ -187,9 +187,9 @@ export default [
         title: "Teach Git at Gauselmann AG",
         logo: GITLogo,
         description:
-            `<p>During my time at ITSD GmbH I had the opportunity to teach Git to other another company.</p>
+            `<p>During my employment at ITSD GmbH I had the opportunity to teach Git to other another company.</p>
                      <p>A coworker and me were teaching Git to a group of developers from the company Gauselmann AG.</p>
-                     <p>The group contained around 10 people and were teached for whole two days in how to work and use Git.</p>
+                     <p>The group contained around 10 people and were two whole days teached in how to use and work with Git.</p>
                      `,
         technology: [Technology.GIT, Technology.SHELL]
     },
